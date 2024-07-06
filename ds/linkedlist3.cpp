@@ -48,6 +48,7 @@ bool detectcycle(node* head){
             return true;
         }
     }
+    cout<<"Cycle not detected"<<endl;
     return false;
 }
 
@@ -67,6 +68,27 @@ void makecycle(node* &head,int pos){
     temp->next=startnode;
 }
 
+//to remove cycle from the linked list
+
+void removecycle(node* &head){
+    node* slow=head;
+    node* fast=head;
+
+    do{
+        slow=slow->next;
+        fast=fast->next->next;
+    }while(slow!=fast);
+
+
+    fast=head;
+    while(fast->next!=slow->next){
+        fast=fast->next;
+        slow=slow->next;
+    }
+    slow->next=NULL;
+    cout<<"removed successfully"<<endl;
+}
+
 int main(){
     node* head=NULL;
     insertnode(head,1);
@@ -77,5 +99,7 @@ int main(){
     insertnode(head,6);
     traverse(head);
     makecycle(head,4);
-    cout<<detectcycle(head);
+    cout<<detectcycle(head)<<endl;
+    removecycle(head);
+    cout<<detectcycle(head)<<endl;
 }
