@@ -49,6 +49,20 @@ void reverselist(node* &head){
 
 }
 
+// reversing a list using recursive method
+
+node* reverse(node* head){
+    if(head == NULL || head->next==NULL){
+        return head;
+    }
+    node*rest=reverse(head->next);
+    head->next->next=head;
+    head->next=NULL;
+
+    return rest;
+}
+
+
 void traverse(node* head){
     node* temp=head;
     cout<<"Head -> ";
@@ -59,6 +73,7 @@ void traverse(node* head){
     cout<<"NULL"<<endl;
 }
 
+
 int main(){
     node* head=NULL;
     insertnode(head,1);
@@ -66,6 +81,6 @@ int main(){
     insertnode(head,3);
     insertnode(head,4);
     traverse(head);
-    reverselist(head);
+    head=reverse(head);
     traverse(head);
 }
