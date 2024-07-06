@@ -71,6 +71,40 @@ void deletenode(node* &head,int val){
     delete curr;
 }
 
+
+// another one is single pointer approach
+
+void deletenode2(node* &head,int val){
+
+    if(head==NULL){
+        cout<<"An Empty list";
+        return;
+    }
+
+    node*temp=head;
+    if(head->data==val){
+        temp=head;
+        head=head->next;
+        cout<<"Done"<<endl;
+        delete temp;
+        return;
+    }
+
+    while(temp->next!=NULL && temp->next->data!=val){
+        temp=temp->next;
+    }
+
+    if(temp->next==NULL){
+        cout<<"No value found"<<endl;
+        return;
+    }
+
+    node* todelete=temp->next;
+    temp=temp->next->next;
+    cout<<"Done"<<endl;
+    delete todelete;
+}
+
 int main(){
     node* head=NULL;
 
@@ -81,7 +115,7 @@ int main(){
     insertnode(head,5);
     insertnode(head,6);
     traverse(head);
-    deletenode(head,1);
+    deletenode2(head,1);
     traverse(head);
 
 
