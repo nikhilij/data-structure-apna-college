@@ -63,6 +63,46 @@ node* findintersection(node* head1,node* head2){
     return ptr1;
 }
 
+// int getlength(node* head) {
+//     int length = 0;
+//     while (head != NULL) {
+//         length++;
+//         head = head->next;
+//     }
+//     return length;
+// }
+
+// node* findintersection(node* head1, node* head2) {
+//     if (!head1 || !head2) return NULL;
+
+//     int len1 = getlength(head1);
+//     int len2 = getlength(head2);
+
+//     node* ptr1 = head1;
+//     node* ptr2 = head2;
+
+//     // Move the pointer of the longer list ahead by the difference in lengths
+//     if (len1 > len2) {
+//         for (int i = 0; i < len1 - len2; i++) {
+//             ptr1 = ptr1->next;
+//         }
+//     } else {
+//         for (int i = 0; i < len2 - len1; i++) {
+//             ptr2 = ptr2->next;
+//         }
+//     }
+
+//     // Move both pointers until they meet
+//     while (ptr1 != ptr2) {
+//         ptr1 = ptr1->next;
+//         ptr2 = ptr2->next;
+//     }
+
+//     return ptr1;
+// }
+
+
+
 
 
 int main(){
