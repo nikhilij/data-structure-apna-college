@@ -24,11 +24,29 @@ void inorderTraversal(node* root) {
     inorderTraversal(root->right);// Traverse right subtree
 }
 
+void preorderTraversal(node* root){
+    if(root==NULL){
+        return;
+    }
+    cout<<root->data<<" ";
+    preorderTraversal(root->left);
+    preorderTraversal(root->right);
+}
+
+void postordertraversal(node* root){
+    if(root==NULL){
+        return;
+    }
+    postordertraversal(root->left);
+    postordertraversal(root->right);
+    cout<<root->data<<" ";
+}
+
 int main(){
 
     node* root = new node(1);
     root->left = new node(2);
-    root->right = new node(3);
+    root->right = new node(3);  
 
 /*      1
        / \
@@ -45,4 +63,8 @@ int main(){
 
 */
     inorderTraversal(root);
+    cout<<"\n";
+    preorderTraversal(root);
+    cout<<"\n";
+    postordertraversal(root);
 }
