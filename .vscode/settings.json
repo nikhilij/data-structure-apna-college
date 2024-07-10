@@ -4,6 +4,7 @@
         "cmath": "cpp",
         "complex": "cpp",
         "random": "cpp",
-        "new": "cpp"
+        "new": "cpp",
+        "deque": "cpp"
     }
 }
