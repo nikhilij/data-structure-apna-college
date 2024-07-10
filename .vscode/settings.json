@@ -5,6 +5,8 @@
         "complex": "cpp",
         "random": "cpp",
         "new": "cpp",
-        "deque": "cpp"
+        "deque": "cpp",
+        "*.tcc": "cpp",
+        "list": "cpp"
     }
 }
