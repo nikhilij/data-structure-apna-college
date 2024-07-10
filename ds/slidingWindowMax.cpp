@@ -21,4 +21,6 @@ int main(){
     for(auto i:dq){
         cout<<i<<" ";
     }
+    cout<<"\n";
+    cout<<dq.size();
 }
