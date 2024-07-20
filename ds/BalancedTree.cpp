@@ -49,6 +49,31 @@ bool isBalanced(node* root){
     if(isBalanced(root->right)==false){
         return false;
     }
+    // this condition will do the check and take bigO(n^2)
+}
+
+bool isbalanced(node* root,int* height){
+    if(root==nullptr){
+        return true;
+    }
+
+    int lh=0,rh=0;
+    if(isbalanced(root->left,&lh)==false){
+        return false;
+    }
+    if(isbalanced(root->right,&rh)==false){
+        return false;
+    }
+
+
+    *height=max(lh,rh)+1;
+    if(abs(lh-rh)<=1){
+        return true;
+    }
+    else{
+        return false;
+    }
+
 }
 
 int main(){
@@ -60,10 +85,24 @@ int main(){
     root->right->left=new node(6);
     root->right->right=new node(7);
 
-    if(isBalanced(root)){
+
+    node* root2= new node(1);
+    root2->left=new node(2);
+    root2->left->left=new node(3);
+
+
+
+    int height=0;
+    if(isbalanced(root2,&height)){
         cout<<"true";
     }
     else{
         cout<<"False";
     }
+    // if(isBalanced(root2)){
+    //     cout<<"true";
+    // }
+    // else{
+    //     cout<<"False";
+    // }
 }
