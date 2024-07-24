@@ -1,8 +1,6 @@
-// Maximum Path Sum
-// wap to find maximum possible sum of a path in the binary tree, starting & ending at any node
-
 #include <iostream>
 #include <algorithm>
+#include <climits>
 using namespace std;
 
 class node
@@ -19,46 +17,31 @@ public:
     }
 };
 
-int rec(node *temp, int &sum, int currSum)
+int maxPathSumutility(node *root, int &ans)
 {
-    if (temp->right == NULL && temp->left == NULL)
+    if (root == NULL)
     {
-        sum = max(sum, currSum + temp->data);
         return 0;
     }
-    if (temp->right)
-    {
-        rec(temp->right, sum, currSum + temp->data);
-    }
-    if (temp->left)
-    {
-        rec(temp->left, sum, currSum + temp->data);
-    }
 
-    return sum;
+    int left = max(0, maxPathSumutility(root->left, ans));
+    int right = max(0, maxPathSumutility(root->right, ans));
+
+    int nodemax = root->data + left + right;
+
+    ans = max(ans, nodemax);
+    return root->data + max(left, right);
 }
 
 int maxPathSum(node *root)
 {
-    if (root == NULL)
-    {
-        return -1;
-    }
-    if (root->left == NULL && root->right == NULL)
-    {
-        return root->data;
-    }
-    node *temp = root;
-    int sum = INT_MIN;
-
-    sum = rec(temp, sum, 0);
-
-    return sum;
+    int ans = INT_MIN;
+    maxPathSumutility(root, ans);
+    return ans;
 }
 
 int main()
 {
-
     node *root = new node(1);
     root->left = new node(2);
     root->right = new node(0);
@@ -67,7 +50,7 @@ int main()
     root->right->left = new node(-6);
     root->right->right = new node(2);
 
-    cout << maxPathSum(root);
+    cout << maxPathSum(root) << endl;
 
     return 0;
 }
