@@ -42,6 +42,61 @@ bool searchValue(node* root,int val){
     }
 }
 
+node* findMIN(node* root){
+    while(root->left!=NULL){
+        root=root->left;
+    }
+    return root;
+}
+
+// function for deletion of node from a binary tree
+node* deleteNode(node* root,int val){
+    if(root==NULL){
+        cout<<"Element is not present";
+        return nullptr;
+    }
+    if(root->data>val){
+        root->left=deleteNode(root->left,val);
+    }else if(root->data<val){
+        root->right=deleteNode(root->right,val);
+    }
+    else{
+        //node to be deleted found
+        //case 1: deleting the leaf node ( no children )
+        if(root->left==NULL && root->right==NULL){
+            delete root;
+            return NULL;
+        }
+
+        //case 2: deleting a node with only one child
+        else if(root->left==NULL){
+            node* temp=root->right;
+            delete root;
+            return temp;
+        }
+        else if(root->right==NULL){
+            node* temp = root->left;
+            delete root;
+            return temp;
+        }
+
+        // case 3: Deleting a node with two children
+        else{
+            node* temp=findMIN(root->right);
+            //here we have used findMIN(root->right)
+            // because of inorder successor that means we have to find the 
+            // smallest in the right subtree
+            root->data=temp->data;
+            root->right=deleteNode(root->right,temp->data);
+            // deleting the inorder successor
+        }
+    }
+    return root;
+}
+
+
+
+
 void preorder(node* root){
     if(root==NULL){
         return;
@@ -63,4 +118,9 @@ int main(){
     cout<<"\n";
     
     searchValue(root,3)?cout<<"true":cout<<"false";
+
+    cout<<"\n";
+
+    deleteNode(root,3);
+    preorder(root);
 }
