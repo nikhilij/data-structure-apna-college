@@ -42,9 +42,9 @@ bool checkForBST(node* root,node* min,node* max){
 }
 
 int main(){
-    node* root = new node(1);
+    node* root = new node(5);
     root->left= new node(2);
-    root->right= new node(3);
+    root->right= new node(7);
 
     checkForBST(root,NULL,NULL)? cout<<"True":cout<<"False";
 }
