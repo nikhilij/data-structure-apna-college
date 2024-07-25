@@ -51,10 +51,10 @@ void inorderTraversal(node *root)
 }
 
 int main(){
-    int preorder[] = {8, 5, 1, 7, 10, 12};
+    int preorder[] = {7,5,4,6,8,9};
     int size = sizeof(preorder) / sizeof(preorder[0]);
     node* root = buildBST(preorder, size);
-
+    // cout<<size;
     cout << "Inorder traversal of the constructed BST: ";
     inorderTraversal(root);
     cout << endl;
