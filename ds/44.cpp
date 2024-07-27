@@ -43,8 +43,8 @@ int maxMinDist(int pos[],int n,int k){
 
 
 int main(){
-    int a[]={4,8,2,9,1};
+    int a[]={6, 7,  9, 11, 13, 15};
 
-    cout<<maxMinDist(a,5,3);
+    cout<<maxMinDist(a,5,4);
 
 }
