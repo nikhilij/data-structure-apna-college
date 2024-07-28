@@ -32,5 +32,7 @@ int main()
 {
     int a[] = {1, 4, 45, 6, 10, 19};
     int n = 6, x = 51;
-    cout << findMinSumSubarray(a, n, x);
+    int minLength=findMinSumSubarray(a,n,x);
+
+    (minLength==n+1)?cout<<"No such subarray exists":cout<<minLength<<endl;
 }
