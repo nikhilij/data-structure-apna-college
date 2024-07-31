@@ -1,3 +1,4 @@
+//wap to  to find a pair of elements in an array such that their sum equals a given target value k
 #include<bits/stdc++.h>
 using namespace std;
 
