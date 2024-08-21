@@ -18,6 +18,7 @@ def create_readme(directory):
                     description = first_line
             
             # Add the filename and description to the README content
+            # Ensure proper formatting by adding a space after `#`
             readme_content += f"## {filename}\n\n{description}\n\n"
 
     # Write the README content to a file, overwriting any existing content
