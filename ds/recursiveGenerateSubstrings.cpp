@@ -1,3 +1,5 @@
+// write a program to recursively generate substrings 
+
 #include <iostream>
 using namespace std;
 

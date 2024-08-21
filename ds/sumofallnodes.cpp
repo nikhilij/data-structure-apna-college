@@ -1,3 +1,4 @@
+//wap to find sum of all nodes
 #include<iostream>
 using namespace std;
 

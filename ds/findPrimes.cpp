@@ -1,3 +1,4 @@
+// wap to find all the primes using eratosthenes algorithm 
 #include <iostream>
 using namespace std;
 

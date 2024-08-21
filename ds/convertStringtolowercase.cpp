@@ -1,3 +1,5 @@
+// wap to convert the string to lowercase in cpp
+
 #include<bits/stdc++.h>
 using namespace std;
 

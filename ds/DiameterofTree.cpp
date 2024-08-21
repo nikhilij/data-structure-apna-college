@@ -1,3 +1,4 @@
+// wap to calc diameter
 #include<iostream>
 using namespace std;
 

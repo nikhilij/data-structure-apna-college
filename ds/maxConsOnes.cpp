@@ -1,3 +1,5 @@
+// wap to find the maximum consecutive one's in the array 
+
 #include<iostream>
 using namespace std;
 

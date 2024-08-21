@@ -1,3 +1,4 @@
+// wap to find the maximum sum of all subarrays using kadane's algorithm
 #include<bits/stdc++.h>
 using namespace std;
 

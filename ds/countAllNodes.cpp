@@ -1,3 +1,4 @@
+// wap to count all the nodes of binary tree
 #include<iostream>
 using namespace std;
 

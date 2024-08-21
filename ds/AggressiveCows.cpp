@@ -1,6 +1,4 @@
-// wap to 
-// Given is an array with n elements that represents n positions along a straight line. Find k elements such that the minimum distance between any 2 elements is the maximum
-// this is same as aggressive cows
+// Given is an array with n elements that represents n positions along a straight line. Find k elements such that the minimum distance between any 2 elements is the maximum this is same as aggressive cows
 
 #include<iostream>
 #include<algorithm>

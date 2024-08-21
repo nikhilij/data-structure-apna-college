@@ -1,3 +1,5 @@
+// wap to replace the nodes data with the sum of its children data
+
 #include <iostream>
 using namespace std;
 

@@ -1,3 +1,5 @@
+// wap to find the smallest subsequence with sum k 
+
 #include <iostream>
 #include <vector>
 #include <queue>

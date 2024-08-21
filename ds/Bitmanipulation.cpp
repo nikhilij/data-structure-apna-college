@@ -1,3 +1,5 @@
+// wap to bitmanipulation like setbit, getbit, updatebit, clearbit
+
 #include<iostream>
 using namespace std;
 

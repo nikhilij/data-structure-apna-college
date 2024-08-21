@@ -1,3 +1,4 @@
+// wap to find the maximum sum of k consecutive elements in an array where the elements have been transformed based on whether they are perfect numbers.
 #include <iostream>
 #include <vector>
 #include <cmath>

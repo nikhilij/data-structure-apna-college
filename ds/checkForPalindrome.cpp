@@ -1,3 +1,5 @@
+// wap to check whether the plaindrome subarray is present or not
+
 #include <iostream>
 #include <string>
 #include <cmath>

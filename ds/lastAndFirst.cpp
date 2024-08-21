@@ -1,3 +1,4 @@
+// wap to check for first occurence and last occurence of a given number in the array
 #include<iostream>
 using namespace std;
 

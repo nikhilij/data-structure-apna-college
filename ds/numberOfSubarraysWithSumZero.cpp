@@ -1,3 +1,5 @@
+// wap to find the number of subarrays with sum 0 
+
 #include <iostream>
 #include <vector>
 #include <unordered_map>
