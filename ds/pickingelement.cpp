@@ -1,3 +1,4 @@
+// wap to find the size of the longest subarray for consecutive absolute differnce is between [0 and 1]
 #include <iostream>
 #include <vector>
 #include <algorithm>
