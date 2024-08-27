@@ -60,6 +60,10 @@ import os
 
 // wap to replace the nodes data with the sum of its children data
 
+## bipartitegraph.cpp
+
+// wap  to check whether a graph is bipartite or not
+
 ## Bitmanipulation.cpp
 
 // wap to bitmanipulation like setbit, getbit, updatebit, clearbit
@@ -135,6 +139,14 @@ No description available.
 ## countSort.cpp
 
 //wap to count sort
+
+## cycledetectiongraph2.cpp
+
+// wap to detect the cycle in directed graph using cpp
+
+## cycledetectioningraph.cpp
+
+// wap to detect the cycle in undirected graph
 
 ## DiameterofTree.cpp
 
@@ -384,6 +396,10 @@ No description available.
 
 //wap to  to find a pair of elements in an array such that their sum equals a given target value k
 
+## pickingelement.cpp
+
+// wap to find the size of the longest subarray for consecutive absolute differnce is between [0 and 1]
+
 ## postfix.cpp
 
 // wap to postfix evaluation in cpp
@@ -435,6 +451,14 @@ No description available.
 ## removeAllDuplicates.cpp
 
 // wap to remove all the duplicates from the string
+
+## removeduplicates.cpp
+
+// wap to remove duplicates
+
+## removeduplicates.exe
+
+MZ                @                                       	!L!This program cannot be run in DOS mode.
 
 ## reverseknode.cpp
 
@@ -528,6 +552,10 @@ No description available.
 
 // write a program to transpose a matrix
 
+## unique_ranked.cpp
+
+// wap to get the ranks of the players according to leaderboard
+
 ## variable_length_array_queris.cpp
 
 /*
@@ -535,6 +563,14 @@ No description available.
 ## vector.cpp
 
 // learning vector in c++;
+
+## weightedgraph.cpp
+
+//wap to create weighted graph
+
+## weightgraph2.cpp
+
+// wap to create the weighted graph and implementation of minimum spanning tree
 
 ## zigzagTraversal.cpp
 
