@@ -31,7 +31,7 @@ public:
         return res;
     }
 };
-
+    
 int main(){
     Solution s;
     vector<int> nums = {1, 2, 3}; 
