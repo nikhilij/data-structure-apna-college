@@ -1,19 +1,8 @@
-// wap to learn oops in cpp
-
 #include<iostream>
+#include "MyClass.cpp"
 using namespace std;
 
-class student{
-    public:
-    string name;
-    int age;
-    bool gender;
-};
-
 int main(){
-    student a;
-    a.name="Nikhil";
-    a.age=20;
-    a.gender=0;
-
+    MyClass obj;
+    obj.display();
 }
