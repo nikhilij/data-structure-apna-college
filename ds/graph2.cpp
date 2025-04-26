@@ -2,7 +2,7 @@
 #include <iostream>
 #include <vector>
 #include <list>
-#include<queue>
+#include <queue>
 
 using namespace std;
 
@@ -12,12 +12,13 @@ class Graph
     int vertices;
     vector<list<int>> addList;
     vector<bool> visited;
-    public:
+
+public:
     Graph(int v)
     {
         vertices = v;
         addList.resize(vertices);
-        visited.resize(vertices,false);
+        visited.resize(vertices, false);
     }
 
     void addEdge(int src, int dest)
@@ -30,35 +31,40 @@ class Graph
     {
         for (int i = 0; i < vertices; i++)
         {
-            cout << "vertices " << i <<": ";
+            cout << "vertices " << i << ": ";
             for (auto it = addList[i].begin(); it != addList[i].end(); it++)
             {
-                cout << "-> "<< *it;
+                cout << "-> " << *it;
             }
-            cout<<endl;
+            cout << endl;
         }
     }
 
-    void bfs(int sVertex){
+    void bfs(int sVertex)
+    {
         queue<int> q;
-        visited[sVertex]=true;
+        visited[sVertex] = true;
         q.push(sVertex);
 
-        while(!q.empty()){
-            int vertex=q.front();
-            cout<<vertex << " ";
+        while (!q.empty())
+        {
+            int vertex = q.front();
+            cout << vertex << " ";
             q.pop();
-            for(auto it = addList[vertex].begin();it!=addList[vertex].end();it++){
-                if(!visited[*it]){
+            for (auto it = addList[vertex].begin(); it != addList[vertex].end(); it++)
+            {
+                if (!visited[*it])
+                {
                     q.push(*it);
-                    visited[*it]=true;
+                    visited[*it] = true;
                 }
             }
         }
     }
 };
 
-int main(){
+int main()
+{
     Graph g(5);
 
     g.addEdge(0, 1);
@@ -71,5 +77,4 @@ int main(){
 
     // g.display();
     g.bfs(0);
-
 }
