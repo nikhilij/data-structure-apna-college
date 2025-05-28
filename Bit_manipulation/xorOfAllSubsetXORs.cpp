@@ -25,6 +25,19 @@ int xorOfAllSubsetXORs(int arr[], int n)
     return result;
 }
 
+// we can also do that using the property of XOR
+
+/* 
+
+int getXorofAllSubsetXors(int arr[], int n)
+{
+    if (n == 1)
+        return arr[0];
+    return 0;
+}
+
+*/
+
 int main()
 {
     int arr[] = {1, 2, 3};
