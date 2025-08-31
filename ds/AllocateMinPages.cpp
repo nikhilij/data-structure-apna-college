@@ -47,6 +47,6 @@ int findmaxpages(int a[],int n,int k){
 int main(){
     int a[]={6, 7, 9, 11, 13, 15};
 
-    cout<<findmaxpages(a,4,2);
+    cout<<findmaxpages(a,4,4);
     
 }
