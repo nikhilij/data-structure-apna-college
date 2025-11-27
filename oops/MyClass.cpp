@@ -1,9 +1,21 @@
 #include<iostream>
 using namespace std;
-class MyClass{
-    public:
-    void display(){
-        cout<<"hello world"<<endl;
-        cout<<"Nikhil Soni"<<endl;
+
+class MyClass {
+public:
+    int myNum;
+    string myString;
+
+    void display() {
+        cout << "Number: " << myNum << endl;
+        cout << "String: " << myString << endl;
     }
 };
+
+
+int main() {
+    MyClass obj;
+    obj.myNum = 42;
+    obj.myString = "Hello, World!";
+    obj.display();
+}

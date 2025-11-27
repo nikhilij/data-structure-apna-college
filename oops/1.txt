@@ -1,0 +1,81 @@
+1. Introduction to OOP
+- What is Object-Oriented Programming?
+- Benefits of OOP in C++
+- Procedural vs Object-Oriented Paradigm
+2. Basic Building Blocks
+- Classes and Objects
+- Access Specifiers: public, private, protected
+- Member Variables and Member Functions
+- this Pointer
+3. Constructors and Destructors
+- Default Constructor
+- Parameterized Constructor
+- Copy Constructor
+- Constructor Overloading
+- Destructor and its role
+4. Encapsulation
+- Data Hiding
+- Getters and Setters
+- Real-world examples
+5. Inheritance
+- Types of Inheritance:
+- Single
+- Multiple
+- Multilevel
+- Hierarchical
+- Hybrid
+- protected vs private inheritance
+- Constructor chaining in inheritance
+- Function Overriding
+6. Polymorphism
+- Compile-time Polymorphism:
+- Function Overloading
+- Operator Overloading
+- Runtime Polymorphism:
+- Virtual Functions
+- Pure Virtual Functions
+- Abstract Classes
+- virtual keyword and vtable
+7. Abstraction
+- Abstracting Implementation Details
+- Interface vs Abstract Class
+- Real-world examples
+8. Friend Functions and Classes
+- Friend Function
+- Friend Class
+- Use cases and limitations
+9. Static Members
+- Static Variables
+- Static Functions
+- Use cases in design patterns
+10. Memory Management
+- new and delete operators
+- Shallow vs Deep Copy
+- Smart Pointers (brief intro)
+11. Operator Overloading
+- Syntax and Rules
+- Overloading +, -, ==, [], (), etc.
+- Best practices
+12. Templates
+- Function Templates
+- Class Templates
+- Template Specialization
+13. Exception Handling
+- try, catch, throw
+- Custom Exception Classes
+- Best practices in interviews
+14. File Handling (Basic)
+- Reading and Writing Files
+- Streams: ifstream, ofstream, fstream
+15. Design Patterns (Optional but Powerful)
+- Singleton
+- Factory
+- Observer (basic overview)
+16. STL and OOP Integration
+- Using vector, map, set with classes
+- Iterators and Algorithms
+17. Best Practices and Interview Tips
+- Code readability and modularity
+- Common OOP mistakes
+- Interview-style coding problems
+- How to explain OOP concepts clearly
